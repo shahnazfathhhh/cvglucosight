@@ -1,0 +1,9 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Demo web (app.py)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/app.py", "console": "integratedTerminal"},
+    {"name": "Tes (test_pipeline.py)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/tests/test_pipeline.py", "console": "integratedTerminal"},
+    {"name": "CLI: analisis 1 foto", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/cli.py", "args": ["${input:foto}"], "console": "integratedTerminal"}
+  ],
+  "inputs": [{"id": "foto", "type": "promptString", "description": "Path foto, mis. samples/nasi_goreng.jpg"}]
+}
